@@ -3,12 +3,12 @@ import requests
 from agent.agents import Agent
 
 class FitnessAgent:
-    def __init__(self, openai_api_key: str, nut_api_key: str):
-        self.openai_api_key = openai_api_key
+    def __init__(self, gemini_api_key: str, nut_api_key: str):
+        self.gemini_api_key = gemini_api_key
         self.nut_api_key = nut_api_key
 
         self.agent = Agent(
-            openai_api_key=self.openai_api_key,
+            gemini_api_key=self.gemini_api_key,
             functions=[self.get_nutritional_info, self.calculate_bmr, self.calculate_tdee, self.calculate_ibw, self.calculate_bmi, self.calculate_calories_to_lose_weight]
         )
 
