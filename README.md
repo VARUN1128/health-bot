@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 4. Create a `.env.list` file with your API keys:
 ```
-OPENAI_API_KEY=your_openai_api_key_here
+GEMINI_API_KEY=your_gemini_api_key_here
 NUT_API_KEY=your_nut_api_key_here
 ```
 
@@ -43,7 +43,7 @@ python chatbot.py
 ## Requirements
 
 - Python 3.8+
-- OpenAI API key
+- Gemini API key
 - Nutrition API key
 - Required Python packages (see requirements.txt)
 
