@@ -1,59 +1,62 @@
-# FitBot: An Advanced Health-Centric Chatbot
+# Health & Fitness Assistant
 
-FitBot is an AI-driven chatbot that uses large language models (LLMs) such as GPT-4 by OpenAI. It seamlessly integrates with the Nutrition endpoint from API Ninjas, providing accurate nutritional data and personalized health recommendations.
+A chatbot powered by OpenAI that provides personalized health and fitness advice, workout plans, and nutrition guidance.
 
 ## Features
-1. **Nutritional Information Retrieval:** Fetches accurate nutritional data of any given food item by leveraging the Nutrition endpoint of API Ninjas.
-2. **Health Calculations:** Computes Basal Metabolic Rate (BMR), Total Daily Energy Expenditure (TDEE), Ideal Body Weight (IBW), and more.
-3. **User-Friendly Interaction:** Features a chat-like interface that is easy to use and interact with.
-4. **Consistent Learning and Improvement:** As the underlying model (GPT-4) continues to learn and improve, so too does FitBot.
 
-## Setup and Installation
+- Personalized fitness advice and workout plans
+- Nutrition guidance and meal planning
+- Health concepts and wellness practices
+- Exercise technique guidance
+- Motivation and support for health goals
 
-To get FitBot up and running, follow these steps:
+## Setup
 
-1. **Clone the Repository**
+1. Clone the repository:
+```bash
+git clone https://github.com/YOUR_USERNAME/health-bot.git
+cd health-bot
+```
 
-   ```bash
-   git clone https://github.com/[YourUsername]/FitBot.git
-   cd FitBot
+2. Create and activate a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+```
 
-2. **Setup Virtual Environment (Optional)**
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-    It's recommended to create a virtual environment to keep the dependencies required by this project separate.
+4. Create a `.env.list` file with your API keys:
+```
+OPENAI_API_KEY=your_openai_api_key_here
+NUT_API_KEY=your_nut_api_key_here
+```
 
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+5. Run the chatbot:
+```bash
+python chatbot.py
+```
 
-3. **Install Dependencies**
+## Requirements
 
-    Install the required packages using pip:
-
-    ```bash
-    pip install -r requirements.txt
-
-4. **Run the Project**
-
-    You're all set! Run the project with:
-
-    ```bash
-    python run_chatbot.py
+- Python 3.8+
+- OpenAI API key
+- Nutrition API key
+- Required Python packages (see requirements.txt)
 
 ## Usage
 
-Once the chatbot is up and running, you can start asking queries. Here's an example of how to interact with it:
+1. Start the chatbot by running `python chatbot.py`
+2. Open your browser and navigate to the provided URL
+3. Start chatting with the health and fitness assistant!
 
-   ```bash
-   What is the TDEE of a 30-year-old man, who is 180 cm tall, weighs 80 kg, and exercises 3 times a week?
-   ```
+## Safety Notice
 
-FitBot will generate a meal plan based on the information provided and also inform the person's BMI.
-
-## Support
-
-If you encounter any issues or have any questions about the project, feel free to open an issue on this GitHub repository.
+This chatbot provides general health and fitness information. Always consult healthcare professionals for medical advice.
 
 ## License
 
-FitBot is open-source software licensed under the MIT license.
+MIT License
